@@ -1,7 +1,8 @@
-Libraries needed:
+**Libraries needed:**
   - `$pip install python-binance`
 
-Running the Bot:
+**Running the Bot**:
+
 To run the bot, open terminal and type `python main.py [arguments]`
 
 Specify bot configurations
