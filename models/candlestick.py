@@ -1,3 +1,6 @@
+import datetime
+
+
 class Candlestick:
     def __init__(self, open1, close, high, low, interval, volume):
         self.open1 = float(open1)   # open is reserved keyword
@@ -6,6 +9,7 @@ class Candlestick:
         self.low = float(low)
         self.interval = interval
         self.volume = float(volume)
+        self.startTime = datetime.datetime.today() # might need to change
 
     def average(self):
         return (self.high + self.low + self.close) / 3
