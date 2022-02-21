@@ -1,3 +1,5 @@
+Software Author: Saad Hassan
+
 **Libraries needed:**
   - `$pip install python-binance`
 
