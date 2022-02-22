@@ -3,6 +3,8 @@ Software Author: Saad Hassan
 **Libraries needed:**
   - `$pip install python-binance`
   - `$pip install colorama`
+  - `$pip install Cython numpy`
+  - `$pip install newtulipy` (for python 3.9) or `$pip install tulipy` (for python 3.7)
 
 **Running the Bot**:
 

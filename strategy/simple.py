@@ -1,7 +1,7 @@
-from strategy.execute_strategy import ExecuteStrategy
+from strategy.exec_strat import ExecStrat
 
 
-class Simple(ExecuteStrategy):
+class Simple(ExecStrat):
 
     async def execute(self, candlesticks, time):
         length = len(candlesticks)

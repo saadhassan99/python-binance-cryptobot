@@ -2,7 +2,7 @@ from models.trade import Trade
 from models.position import Position
 
 
-class ExecuteStrategy:
+class ExecStrat:
 
     def __init__(self, buy_signal, sell_signal):
         self.buy_signal = buy_signal

@@ -2,7 +2,8 @@ import asyncio
 import uuid
 from historical.historical_data import HistoricalData
 from strategy.simple import Simple
-from strategy.execute_strategy import ExecuteStrategy
+from strategy.macd import MACD
+from strategy.exec_strat import ExecStrat
 from colorama import Fore, init
 
 
@@ -55,14 +56,12 @@ class Backtest:
             print("Error : " + str(e))
 
     async def on_buy_signal(self, price, time):
-        print("BUY SIGNAL")
         await self.strategy.buy(price=price,
                                 quantity=1.0,
                                 time=time,
                                 order_id=uuid.uuid4())
 
     async def on_sell_signal(self, price, quantity, position, time):
-        print("SELL SIGNAL")
         await self.strategy.sell(price=price,
                                  quantity=quantity,
                                  time=time,
