@@ -23,5 +23,8 @@ class ExecuteStrategy:
         if position:
             position.close(trade)
 
+    def getPositions(self):
+        return list(self.filled_orders.values())
+
     def openPositions(self):
         return list(filter(lambda x: x.state == 'open', self.filled_orders.values()))

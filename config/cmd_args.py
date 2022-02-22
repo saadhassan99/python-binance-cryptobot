@@ -6,7 +6,7 @@ from datetime import timedelta
 # Get today's date
 today = date.today()
 # Yesterday date
-yesterday = today - timedelta(days=30)
+yesterday = today - timedelta(days=60)
 
 parser = argparse.ArgumentParser(description="Specify bot configurations")
 parser.add_argument('-i', '--interval', metavar='', default='1d',
